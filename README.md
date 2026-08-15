@@ -80,8 +80,6 @@ En esta primera etapa, se identifican las entidades del negocio, sus atributos, 
 
 ---
 
-## 📁 4. Estructura del Repositorio
+## Autor
 
-* 📄 `Encargo_Semanal.docx`: Documento oficial Word con las evidencias fotográficas de los modelos Lógico (Barker) y Relacional (Bachman/IE).
-* 📦 `Encargo_Semanal.zip`: Archivo comprimido con el diseño original de **Oracle SQL Developer Data Modeler** (`.dmd` y su subcarpeta de configuración).
-* 📄 `README.md`: Resumen técnico del encargo.
+* Satcha Belen Quispe Parada
