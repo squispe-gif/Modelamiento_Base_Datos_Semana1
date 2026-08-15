@@ -1,4 +1,4 @@
 # Modelamiento_Base_Datos_Semana1
 
-Autor
+Autor:
 Satcha Belen Quispe Parada
