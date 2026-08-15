@@ -42,33 +42,33 @@ En esta primera etapa, se identifican las entidades del negocio, sus atributos, 
 
 ### 🔹 Dominios y Tipos de Datos (Modelo Relacional / Bachman)
 
-| Tabla | Atributo | Tipo de Dato | Clave | Obligatoriedad |
-| :--- | :--- | :--- | :--- | :--- |
-| **`PASAJERO`** | `num_pasaporte` | `VARCHAR2(20)` | **PK** | NOT NULL |
-| | `nombre_completo` | `VARCHAR2(100)` | | NOT NULL |
-| | `fecha_nacimiento`| `DATE` | | NOT NULL |
-| | `nacionalidad` | `VARCHAR2(50)` | | NOT NULL |
-| | `telefono` | `VARCHAR2(20)` | | NULL (Opcional) |
-| | `email` | `VARCHAR2(100)` | | NULL (Opcional) |
-| **`EMPLEADO`** | `rut_empleado` | `VARCHAR2(12)` | **PK** | NOT NULL |
-| | `nombre_completo` | `VARCHAR2(100)` | | NOT NULL |
-| | `direccion` | `VARCHAR2(150)` | | NOT NULL |
-| | `sueldo_base` | `NUMBER(10,2)` | | NOT NULL |
-| | `fecha_ingreso` | `DATE` | | NOT NULL |
-| | `genero` | `VARCHAR2(15)` | | NOT NULL |
-| | `telefono_movil` | `VARCHAR2(20)` | | NOT NULL |
-| | `telefono_contacto`| `VARCHAR2(20)` | | NULL (Opcional) |
-| **`VUELO`** | `num_vuelo` | `VARCHAR2(10)` | **PK** | NOT NULL |
-| | `fecha_salida` | `DATE` | | NOT NULL |
-| | `fecha_llegada` | `DATE` | | NOT NULL |
-| | `hora_salida` | `VARCHAR2(8)` | | NOT NULL |
-| **`RESERVA`** | `num_reserva` | `NUMBER(10)` | **PK** | NOT NULL |
-| | `fecha_reserva` | `DATE` | | NOT NULL |
-| | `fecha_viaje` | `DATE` | | NOT NULL |
-| | `estado` | `VARCHAR2(15)` | | NOT NULL |
-| | `num_pasaporte` | `VARCHAR2(20)` | **FK** | NOT NULL |
-| | `rut_empleado` | `VARCHAR2(12)` | **FK** | NOT NULL |
-| | `num_vuelo` | `VARCHAR2(10)` | **FK** | NOT NULL |
+| Tabla | Atributo | Tipo de Dato | Obligatoriedad |
+| :--- | :--- | :--- | :--- |
+| **`PASAJERO`** | `num_pasaporte` | `VARCHAR2(20)` | NOT NULL |
+| | `nombre_completo` | `VARCHAR2(100)` | NOT NULL |
+| | `fecha_nacimiento`| `DATE` | NOT NULL |
+| | `nacionalidad` | `VARCHAR2(50)` | NOT NULL |
+| | `telefono` | `VARCHAR2(20)` | NULL (Opcional) |
+| | `email` | `VARCHAR2(100)` | NULL (Opcional) |
+| **`EMPLEADO`** | `rut_empleado` | `VARCHAR2(12)` | NOT NULL |
+| | `nombre_completo` | `VARCHAR2(100)` | NOT NULL |
+| | `direccion` | `VARCHAR2(150)` | NOT NULL |
+| | `sueldo_base` | `NUMBER(10,2)` | NOT NULL |
+| | `fecha_ingreso` | `DATE` | NOT NULL |
+| | `genero` | `VARCHAR2(15)` | NOT NULL |
+| | `telefono_movil` | `VARCHAR2(20)` | NOT NULL |
+| | `telefono_contacto`| `VARCHAR2(20)` | NULL (Opcional) |
+| **`VUELO`** | `num_vuelo` | `VARCHAR2(10)` | NOT NULL |
+| | `fecha_salida` | `DATE` | NOT NULL |
+| | `fecha_llegada` | `DATE` | NOT NULL |
+| | `hora_salida` | `VARCHAR2(8)` | NOT NULL |
+| **`RESERVA`** | `num_reserva` | `NUMBER(10)` | NOT NULL |
+| | `fecha_reserva` | `DATE` | NOT NULL |
+| | `fecha_viaje` | `DATE` | NOT NULL |
+| | `estado` | `VARCHAR2(15)` | NOT NULL |
+| | `num_pasaporte` | `VARCHAR2(20)` | NOT NULL |
+| | `rut_empleado` | `VARCHAR2(12)` | NOT NULL |
+| | `num_vuelo` | `VARCHAR2(10)` | NOT NULL |
 
 ---
 
